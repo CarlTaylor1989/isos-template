@@ -1,0 +1,17 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "import/order": [
+      1,
+      {
+        "groups": ["external", "builtin", "internal", "sibling", "parent", "index"],
+        "pathGroups": [
+          {
+            "pattern": "components",
+            "group": "internal"
+          }
+        ]
+      }
+    ]
+  }
+}
